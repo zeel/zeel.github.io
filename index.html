@@ -1,0 +1,37 @@
+<html lang="en" ng-cloak>
+  <head>
+  	<meta charset="UTF-8">
+  	<title>TODO - MVC</title>
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+  	<div class = "container" ng-controller="todoController">
+      <form ng-submit="addToDo(todo)">
+        <input type="checkbox" ng-show="todolist.length" ng-model="selectAll" ng-click="toggleDisplayAll(selectAll)">
+        <label>Todo:</label>
+        <input type = "text" ng-model="todo" required>
+      </form>
+      <div class="todo_container">
+        <div class="todo_box" ng-repeat = "todos in todolist | filter: statusFilter track by $index">
+          <div style="display:inline-block">
+            <input type="checkbox" ng-model = "todos.inactive" >
+              <span  ng-class="{strikeout : todos.inactive}">{{todos.name}}</span>
+          </div>
+          <span style="display:inline-block;float:right;"><a href="" ng-click="removeToDo($index);">x</a></span>
+        </div>
+        <div>
+          <span>{{countActive}} items are remaining</span>
+          <span><a ng-class="{active : showType == 'all'}" ng-click="changeShowType('all')" href="">All</a></span>
+          <span><a ng-class="{active : showType == 'active'}" ng-click="changeShowType('active')" href="">Active</a></span>
+          <span><a ng-class="{active : showType == 'completed'}" ng-click="changeShowType('completed')" href="">Completed</a></span>
+          <span><a ng-click = 'clearCompleted()' href="">Clear Completed</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+  <!--<script src="js/app.js"></script>
+  <script src="controllers/todocontroller.js"></script>-->
+
+</html>
