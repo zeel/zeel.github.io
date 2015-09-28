@@ -1,0 +1,22 @@
+{
+  "name": "todoapp_backbone",
+  "version": "0.0.0",
+  "authors": [
+    "zeel shah"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "backbone.localStorage": "Backbone.localStorage#~1.1.16",
+    "jquery": "~2.1.4",
+    "requirejs": "~2.1.20",
+    "underscore": "~1.8.3"
+  }
+}
