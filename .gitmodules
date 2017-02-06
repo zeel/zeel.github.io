@@ -1,0 +1,3 @@
+[submodule "hexdex"]
+	path = hexdex
+	url = https://github.com/zeel/hexdex
