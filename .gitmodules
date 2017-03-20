@@ -1,3 +1,6 @@
 [submodule "hexdex"]
 	path = hexdex
 	url = https://github.com/zeel/hexdex
+[submodule "resume"]
+	path = resume
+	url = https://github.com/zeel/resume

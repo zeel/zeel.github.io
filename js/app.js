@@ -14,7 +14,30 @@ function setupStickyHeader() {
 		jBody.toggleClass('fixed', isScrolled);
 	});
 }
+
+function checkHash() {
+	lstrHash = window.location.hash.replace('#/', '#');
+
+	if ($('a[href="' + lstrHash + '"]').length > 0) {
+		$('a[href="' + lstrHash + '"]').trigger('click');
+	}
+}
+
+function applyScrollSpy() {
+	$('.navbar').on('activate.bs.scrollspy', function() {
+		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
+	});
+}
+
+function applyNavigationFixForPhone() {
+	$('.navbar li a').click(function(event) {
+		$('.navbar-collapse').removeClass('in').addClass('collapse');
+	});
+}
 $(function() {
 	setupTypedJS();
 	setupStickyHeader();
+	checkHash();
+	applyScrollSpy();
+	applyNavigationFixForPhone();
 });
