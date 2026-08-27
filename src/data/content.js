@@ -36,7 +36,14 @@ export const experience = [
     title: 'Staff Frontend Engineer',
     company: 'Lightup Data',
     description:
-      'Redesigned the monitor page and built LLM CRUD UI in React with Ant Design; created core components of the Energy design system.',
+      'Own frontend architecture for the monitoring experience — led the end-to-end monitor page redesign, shipped the LLM management surface (full CRUD), and architected core components of the Energy design system. Drove the React 16 → 19 and Ant Design v3 → v6 migration, introducing RTK Query to cut bundle size and load time.',
+  },
+  {
+    dates: 'Oct 2024 — May 2025',
+    title: 'Mobile Engineer (Part-time)',
+    company: 'Toast',
+    description:
+      'Built features for the Toast mobile app and delivered an iOS app in React Native, taking it through App Store review to release.',
   },
   {
     dates: 'Nov 2020 — Sept 2024',
@@ -111,17 +118,21 @@ export const skills = [
   { label: 'TypeScript', featured: true },
   { label: 'React Native', featured: true },
   { label: 'JavaScript' },
+  { label: 'Next.js' },
   { label: 'Redux / Redux Toolkit' },
   { label: 'Server-Side Rendering' },
   { label: 'Node.js' },
+  { label: 'Nest.js' },
   { label: 'CSS' },
   { label: 'Tailwind CSS' },
   { label: 'HTML' },
   { label: 'Firebase' },
+  { label: 'Prompt Engineering' },
+  { label: 'Claude Code / Cursor / Copilot' },
 ]
 
 export const education = [
-  { title: 'MBA, Operations — Amrita Online', meta: '2023 — 2025 · Distinction' },
+  { title: 'MBA, Operations — Amrita Online', meta: '2023 — 2025 · 7.47/10 CGPA' },
   { title: 'B.Tech, ICT — DA-IICT, Gujarat', meta: '2010 — 2014 · 8.46 CPI' },
   { title: 'Summer Intern — IIT Bombay, Maharashtra', meta: '2013' },
 ]
