@@ -36,14 +36,14 @@ export const experience = [
     title: 'Staff Frontend Engineer',
     company: 'Lightup Data',
     description:
-      'Own frontend architecture for the monitoring experience — led the end-to-end monitor page redesign, shipped the LLM management surface (full CRUD), and architected core components of the Energy design system. Drove the React 16 → 19 and Ant Design v3 → v6 migration, introducing RTK Query to cut bundle size and load time.',
+      'Sole frontend architect for the platform — built the Energy design system (48 components), redesigned the monitor page end to end, and shipped the LLM management surface (full CRUD). Led a full modernization to React 19, Ant Design v6, and Vite with route-level code splitting and RTK Query, cutting initial-load payload by 45%.',
   },
   {
     dates: 'Oct 2024 — May 2025',
     title: 'Mobile Engineer (Part-time)',
     company: 'Toast',
     description:
-      'Built features for the Toast mobile app and delivered an iOS app in React Native, taking it through App Store review to release.',
+      'Built features for the Toast mobile app and shipped an iOS app in React Native, taking it through App Store review to release.',
   },
   {
     dates: 'Nov 2020 — Sept 2024',
@@ -64,21 +64,21 @@ export const experience = [
     title: 'Member of Technical Staff',
     company: 'Qubole',
     description:
-      "Integrated Google Cloud support into Qubole's data platform using Ruby on Rails and vanilla JavaScript.",
+      "Integrated Google Cloud support into Qubole's data platform using Ruby on Rails and JavaScript.",
   },
   {
     dates: 'Oct 2015 — Oct 2017',
     title: 'Product Engineer, Frontend',
     company: 'Sprinklr',
     description:
-      'Maintained a Backbone-based MVC architecture and led the transition of the publishing module to React, developing new features along the way.',
+      'Migrated the publishing module from a Backbone MVC architecture to React, maintaining the legacy stack through the transition.',
   },
   {
-    dates: 'Jan 2014 — Sep 2015',
+    dates: 'Jan 2014 — Sept 2015',
     title: 'Software Developer, Full Stack',
     company: 'Aspiring Minds',
     description:
-      'Designed a normalized question-bank database in MySQL and developed internal tools with PHP, Bootstrap, and Python.',
+      'Designed a normalized question-bank database in MySQL and built internal tooling with PHP and Python.',
   },
 ]
 
@@ -119,8 +119,12 @@ export const skills = [
   { label: 'React Native', featured: true },
   { label: 'JavaScript' },
   { label: 'Next.js' },
+  { label: 'Design Systems' },
   { label: 'Redux / Redux Toolkit' },
+  { label: 'RTK Query' },
   { label: 'Server-Side Rendering' },
+  { label: 'Ant Design' },
+  { label: 'Vite' },
   { label: 'Node.js' },
   { label: 'Nest.js' },
   { label: 'CSS' },
@@ -132,7 +136,6 @@ export const skills = [
 ]
 
 export const education = [
-  { title: 'MBA, Operations — Amrita Online', meta: '2023 — 2025 · 7.47/10 CGPA' },
-  { title: 'B.Tech, ICT — DA-IICT, Gujarat', meta: '2010 — 2014 · 8.46 CPI' },
-  { title: 'Summer Intern — IIT Bombay, Maharashtra', meta: '2013' },
+  { title: 'MBA, Operations — Amrita Online', meta: '2023 — 2025 · 7.47/10' },
+  { title: 'B.Tech, ICT — DA-IICT, Gujarat', meta: '2010 — 2014 · 8.46/10' },
 ]
