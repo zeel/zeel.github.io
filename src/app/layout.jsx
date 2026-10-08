@@ -20,7 +20,7 @@ const barlowCondensed = Barlow_Condensed({
 const title = `${profile.name} — ${profile.role}`
 
 export const metadata = {
-  metadataBase: new URL('https://zeel.github.io'),
+  metadataBase: new URL('https://zeelshah.com'),
   title,
   description: `${profile.name} — frontend engineer with 12+ years of experience building scalable web and mobile applications with React, TypeScript, and React Native. Based in ${profile.location}.`,
   icons: {

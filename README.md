@@ -1,6 +1,6 @@
 # zeel.github.io
 
-Personal portfolio site — Next.js (App Router, static export), deployed to GitHub Pages.
+Personal portfolio site, live at **https://zeelshah.com** — Next.js (App Router, static export), deployed to GitHub Pages.
 Design imported from the Claude Design project "Frontend Developer Portfolio Site".
 
 ## Run locally
@@ -38,3 +38,13 @@ GitHub Pages.
 Pushing to `master` triggers [.github/workflows/deploy.yml](.github/workflows/deploy.yml),
 which runs `next build` and publishes the exported `out/` folder to GitHub Pages.
 (The repo's **Settings → Pages → Source** must stay set to **GitHub Actions**.)
+
+The custom domain `zeelshah.com` is registered at Namecheap. Its DNS has four
+A records and four AAAA records on `@` pointing at GitHub Pages, plus a `www`
+CNAME to `zeel.github.io`. The domain itself is set in the repo's
+**Settings → Pages → Custom domain**, so no `CNAME` file is needed.
+`zeel.github.io` redirects to it automatically.
+
+Keep the `_github-pages-challenge-zeel` TXT record at Namecheap: it keeps the
+domain verified on the GitHub account, so no one else can attach `zeelshah.com`
+to their own GitHub Pages site.
