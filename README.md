@@ -50,4 +50,6 @@ CNAME to `zeel.github.io`. The domain itself is set in the repo's
 
 Keep the `_github-pages-challenge-zeel` TXT record at Namecheap: it keeps the
 domain verified on the GitHub account, so no one else can attach `zeelshah.com`
-to their own GitHub Pages site.
+to their own GitHub Pages site. Also keep the `google-site-verification=…` TXT
+record on `@`: it verifies the domain in Google Search Console, where the
+sitemap is submitted.
