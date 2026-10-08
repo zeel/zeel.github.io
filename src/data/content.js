@@ -3,6 +3,7 @@
 
 export const profile = {
   name: 'Zeel Shah',
+  url: 'https://zeelshah.com', // the live site; used for SEO tags, sitemap and robots.txt
   navRole: 'FRONTEND', // shown after your name in the nav: ZEEL SHAH / FRONTEND
   role: 'Staff Frontend Engineer',
   location: 'Bangalore, India',

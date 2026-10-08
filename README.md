@@ -23,6 +23,9 @@ npm run preview  # serve the exported out/ folder locally
 | Section markup / structure | [src/components/](src/components/) |
 | Section order | [src/app/page.jsx](src/app/page.jsx) |
 | Page title, meta / social tags, font loading | [src/app/layout.jsx](src/app/layout.jsx) |
+| Site URL used by SEO tags, sitemap and robots.txt | `profile.url` in [src/data/content.js](src/data/content.js) |
+| Structured data for search engines (JSON-LD), canonical URL | [src/app/page.jsx](src/app/page.jsx) |
+| `sitemap.xml` / `robots.txt` | [src/app/sitemap.js](src/app/sitemap.js), [src/app/robots.js](src/app/robots.js) |
 | Photo / resume / favicon | Replace the file in `public/` (`photo.jpg`, `Zeel-Shah-Resume.pdf`, `favicon.svg`) |
 
 Section numbers (01–05) are written directly in each component in

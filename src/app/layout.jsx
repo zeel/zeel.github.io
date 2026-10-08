@@ -20,7 +20,7 @@ const barlowCondensed = Barlow_Condensed({
 const title = `${profile.name} — ${profile.role}`
 
 export const metadata = {
-  metadataBase: new URL('https://zeelshah.com'),
+  metadataBase: new URL(profile.url),
   title,
   description: `${profile.name} — frontend engineer with 12+ years of experience building scalable web and mobile applications with React, TypeScript, and React Native. Based in ${profile.location}.`,
   icons: {
@@ -28,6 +28,7 @@ export const metadata = {
   },
   openGraph: {
     type: 'website',
+    siteName: profile.name,
     title,
     description:
       'Frontend engineer with 12+ years of experience building scalable web and mobile applications with React, TypeScript, and React Native.',
