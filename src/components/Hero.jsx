@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { profile } from '../data/content'
 import Corners from './Corners'
 
@@ -24,7 +25,7 @@ export default function Hero() {
         </div>
       </div>
       <figure className="hero-photo blueprint duotone">
-        <img src={profile.photo} alt={profile.name} />
+        <Image src={profile.photo} alt={profile.name} width={1200} height={1600} loading="eager" />
         <Corners />
       </figure>
     </header>
