@@ -2,6 +2,7 @@ import { Barlow, Barlow_Condensed } from 'next/font/google'
 import { profile } from '../data/content'
 import '../styles/design-system.css'
 import '../styles/portfolio.css'
+import '../styles/twin.css'
 
 // Only the weights the CSS uses are loaded — add one here before using a new
 // font-weight, or the browser will fake it.

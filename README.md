@@ -26,6 +26,9 @@ npm run preview  # serve the exported out/ folder locally
 | Site URL used by SEO tags, sitemap and robots.txt | `profile.url` in [src/data/content.js](src/data/content.js) |
 | Structured data for search engines (JSON-LD), canonical URL | [src/app/page.jsx](src/app/page.jsx) |
 | `sitemap.xml` / `robots.txt` | [src/app/sitemap.js](src/app/sitemap.js), [src/app/robots.js](src/app/robots.js) |
+| AI twin chat: greeting, suggested questions, extra facts, backend URL | `twin` in [src/data/content.js](src/data/content.js) |
+| AI twin chat window | [src/components/TwinChat.jsx](src/components/TwinChat.jsx), [src/styles/twin.css](src/styles/twin.css) |
+| AI twin backend (Claude API, rate limits) | [twin/](twin/README.md) |
 | Photo / resume / favicon | Replace the file in `public/` (`photo.jpg`, `Zeel-Shah-Resume.pdf`, `favicon.svg`) |
 
 Section numbers (01–05) are written directly in each component in

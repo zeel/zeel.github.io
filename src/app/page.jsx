@@ -6,6 +6,7 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Education from '../components/Education'
 import Contact from '../components/Contact'
+import TwinChat from '../components/TwinChat'
 
 export const metadata = {
   alternates: {
@@ -58,6 +59,7 @@ export default function Home() {
       <Skills />
       <Education />
       <Contact />
+      <TwinChat />
     </div>
   )
 }

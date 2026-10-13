@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zeel-twin",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "vars": {
+    // Comma-separated sites allowed to call the chat API from a browser.
+    "ALLOWED_ORIGINS": "https://zeelshah.com,https://www.zeelshah.com,http://localhost:3000"
+  },
+  "ratelimits": [
+    {
+      // Per visitor IP: at most `limit` messages per `period` seconds (10 or 60).
+      "name": "CHAT_RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 8, "period": 60 }
+    }
+  ]
+}

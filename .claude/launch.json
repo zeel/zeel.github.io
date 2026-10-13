@@ -4,14 +4,34 @@
     {
       "name": "portfolio",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "port": 3000
     },
     {
       "name": "portfolio-static",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "out"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4173",
+        "--directory",
+        "out"
+      ],
       "port": 4173
+    },
+    {
+      "name": "twin-worker",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "twin",
+        "run",
+        "dev"
+      ],
+      "port": 8787
     }
   ]
 }
