@@ -34,7 +34,7 @@ export const navLinks = [
 
 export const experience = [
   {
-    dates: 'May 2025 — 2026',
+    dates: 'May 2025 — Sept 2026',
     title: 'Staff Frontend Engineer',
     company: 'Lightup Data',
     description:
@@ -157,7 +157,7 @@ export const twin = {
   // Extra facts the twin can use beyond the sections above. It is told never
   // to go beyond what's written in this file, so keep these accurate.
   facts: [
-    'At Lightup Data (May 2025 to 2026) I was the sole frontend architect for the data-quality platform, on a two-person frontend team, owning architecture, the design system, build tooling and delivery across the whole product.',
+    'At Lightup Data (May 2025 to Sept 2026) I was the sole frontend architect for the data-quality platform, on a two-person frontend team, owning architecture, the design system, build tooling and delivery across the whole product.',
     'I built and maintained the Energy design system at Lightup: 48 components, 9 of them authored from scratch, with shared component APIs, composition patterns and documentation.',
     'I led a full frontend modernization at Lightup: React 16.14 to 19, Ant Design v4 to v6, and CRA/Webpack to Vite. Route-level code splitting turned a single 7.3 MB bundle into 141 chunks and cut the initial-load payload by 45% (2,589 KB to 1,421 KB gzipped). I also migrated data fetching to RTK Query.',
     "I designed and shipped Lightup's LLM management surface (full CRUD) for configuring and operating LLM-backed data quality monitors, and led the end-to-end redesign of the monitor page.",
@@ -166,6 +166,6 @@ export const twin = {
     'At Tekion I was Software Engineer 2 (Nov 2020 to Mar 2022) and was promoted to Senior Software Engineer (Apr 2022 to Sept 2024) for consistently owning delivery of the CRM module.',
     'At Swiggy I was promoted from Software Engineer 1 (May 2019 to Mar 2020) to Software Engineer 2 within my first year (Apr 2020 to Oct 2020) for owning high-traffic consumer surfaces.',
     'I use AI tools daily (Claude Code, Cursor, Copilot) and have shipped LLM-backed product features, including prompt engineering.',
-    "I left Lightup Data in 2026 and I'm now looking for my next role. Email is the best way to reach me about opportunities.",
+    "I left Lightup Data in September 2026 and I'm now looking for my next role. Email is the best way to reach me about opportunities.",
   ],
 }
