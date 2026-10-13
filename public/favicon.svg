@@ -1,5 +1,11 @@
 <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-  <rect width="56" height="56" fill="#f2f2f3"/>
-  <rect x="10" y="10" width="36" height="36" fill="none" stroke="#5980a6" stroke-width="2"/>
-  <text x="28" y="35" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="17" fill="#1d1f20">ZS</text>
+  <style>
+    .bg { fill: #f2f2f3 } .frame { stroke: #5980a6 } .ink { fill: #1d1f20 }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #151718 } .frame { stroke: #8fb3d6 } .ink { fill: #e4e5e7 }
+    }
+  </style>
+  <rect class="bg" width="56" height="56"/>
+  <rect x="10" y="10" width="36" height="36" class="frame" fill="none" stroke-width="2"/>
+  <text x="28" y="35" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="17" class="ink">ZS</text>
 </svg>

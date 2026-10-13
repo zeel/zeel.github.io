@@ -130,6 +130,9 @@
 }
 
 .twin-error { margin: 0; font-size: 13px; color: #a3341f; }
+@media (prefers-color-scheme: dark) {
+  .twin-error { color: #f08a75; }
+}
 .twin-note { margin: 0; font-size: 13px; }
 .twin-link-btn {
   padding: 0;

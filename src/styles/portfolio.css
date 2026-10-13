@@ -10,6 +10,8 @@
 }
 .page a { color: var(--color-accent-700); }
 .page a:hover { color: var(--color-accent-800); }
+/* Primary buttons keep their own text color instead of the link color. */
+.page a.btn-primary, .page a.btn-primary:hover { color: var(--color-bg); }
 
 /* — nav — */
 .site-nav {
@@ -192,6 +194,20 @@
   color: var(--color-accent-600);
   border-top: 1px solid var(--color-accent-800);
   padding-top: var(--space-4);
+}
+
+/* In dark mode the contact band keeps its light-theme colors (deep navy,
+   light text) instead of flipping to a pale band. */
+@media (prefers-color-scheme: dark) {
+  .contact {
+    --color-bg: #f2f2f3;
+    --color-accent-200: #d6ebff;
+    --color-accent-300: #b5d9fd;
+    --color-accent-400: #94bce3;
+    --color-accent-600: #597ea3;
+    --color-accent-800: #2c455d;
+    --color-accent-900: #1d2d3d;
+  }
 }
 
 /* — responsive — */
