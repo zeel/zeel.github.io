@@ -13,7 +13,7 @@ export default function Nav() {
           {link.label}
         </a>
       ))}
-      <a className="btn btn-primary blueprint" href={profile.resume} download>
+      <a className="btn btn-primary blueprint" href={profile.resume} download data-goatcounter-click="resume-download-nav">
         Resume ↓
         <Corners />
       </a>

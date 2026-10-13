@@ -19,6 +19,13 @@ export const profile = {
   resume: '/Zeel-Shah-Resume.pdf', // file lives in public/
 }
 
+// Visitor analytics via GoatCounter (free, no cookies). Sign up at
+// https://www.goatcounter.com, then put the code you chose here — e.g. 'zeelshah'
+// for https://zeelshah.goatcounter.com. '' turns analytics off.
+export const analytics = {
+  goatcounterCode: 'zeel',
+}
+
 // Toggles carried over from the design's props.
 export const flags = {
   showProjects: true,

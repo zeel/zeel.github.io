@@ -29,6 +29,7 @@ npm run preview  # serve the exported out/ folder locally
 | AI twin chat: greeting, suggested questions, extra facts, backend URL | `twin` in [src/data/content.js](src/data/content.js) |
 | AI twin chat window | [src/components/TwinChat.jsx](src/components/TwinChat.jsx), [src/styles/twin.css](src/styles/twin.css) |
 | AI twin backend (Claude API, rate limits) | [twin/](twin/README.md) |
+| Visitor analytics (GoatCounter code; `''` turns it off) | `analytics` in [src/data/content.js](src/data/content.js) |
 | Photo / resume / favicon | Replace the file in `public/` (`photo.jpg`, `Zeel-Shah-Resume.pdf`, `favicon.svg`) |
 
 Section numbers (01–05) are written directly in each component in

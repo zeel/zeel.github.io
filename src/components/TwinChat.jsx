@@ -11,6 +11,11 @@ const FAILED_REPLY = "Sorry, I couldn't answer that right now. Please try again,
 const REFUSED_REPLY = "I can't help with that one. Ask me about my work, projects or skills instead."
 const LINK_PATTERN = /(https?:\/\/[^\s]+[^\s.,;:!?)]|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g
 
+// Counts a GoatCounter event; does nothing when analytics is off or blocked.
+function track(path, title) {
+  window.goatcounter?.count?.({ path, title, event: true })
+}
+
 // Errors whose message is safe and useful to show the visitor.
 class ChatError extends Error {}
 
@@ -57,6 +62,11 @@ export default function TwinChat() {
     setInput('')
     setError('')
     setPending(true)
+    // Only suggested questions are named — free-text questions stay private.
+    track(
+      twin.suggestedQuestions.includes(text) ? `twin-question: ${text}` : 'twin-question: (typed)',
+      'Asked the AI twin',
+    )
 
     let answer = ''
     const showAnswer = (content) =>
@@ -117,7 +127,10 @@ export default function TwinChat() {
         ref={launcherRef}
         type="button"
         className="twin-launcher blueprint"
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setOpen(true)
+          track('twin-open', 'Opened the AI twin chat')
+        }}
         aria-haspopup="dialog"
       >
         <ChatIcon />

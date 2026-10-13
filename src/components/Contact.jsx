@@ -6,19 +6,19 @@ export default function Contact() {
       <div className="contact-inner">
         <h6 className="contact-kicker">05 · Get in touch</h6>
         <h2>Have a role or project in mind? Let's talk.</h2>
-        <a className="contact-email" href={`mailto:${profile.email}`}>
+        <a className="contact-email" href={`mailto:${profile.email}`} data-goatcounter-click="email-contact">
           {profile.email}
         </a>
         <div className="contact-meta">
           {flags.showPhone && <span>{profile.phone}</span>}
           <span>{profile.location}</span>
-          <a href={profile.github} target="_blank" rel="noreferrer">
+          <a href={profile.github} target="_blank" rel="noreferrer" data-goatcounter-click="github-contact">
             GitHub
           </a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer">
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" data-goatcounter-click="linkedin-contact">
             LinkedIn
           </a>
-          <a href={profile.resume} download>
+          <a href={profile.resume} download data-goatcounter-click="resume-download-contact">
             Download resume ↓
           </a>
         </div>

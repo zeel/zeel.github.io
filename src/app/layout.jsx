@@ -1,5 +1,6 @@
 import { Barlow, Barlow_Condensed } from 'next/font/google'
-import { profile } from '../data/content'
+import Script from 'next/script'
+import { profile, analytics } from '../data/content'
 import '../styles/design-system.css'
 import '../styles/portfolio.css'
 import '../styles/twin.css'
@@ -48,7 +49,16 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${barlow.variable} ${barlowCondensed.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        {analytics.goatcounterCode && (
+          <Script
+            src="https://gc.zgo.at/count.js"
+            data-goatcounter={`https://${analytics.goatcounterCode}.goatcounter.com/count`}
+            strategy="afterInteractive"
+          />
+        )}
+      </body>
     </html>
   )
 }

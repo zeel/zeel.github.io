@@ -23,7 +23,13 @@ export default function Projects() {
               {project.links.length > 0 && (
                 <div className="project-links">
                   {project.links.map((link) => (
-                    <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      data-goatcounter-click={`project-link: ${project.title} / ${link.label}`}
+                    >
                       {link.label}
                     </a>
                   ))}

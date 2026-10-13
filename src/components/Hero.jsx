@@ -18,14 +18,14 @@ export default function Hero() {
         <h1>{profile.headline}</h1>
         <p className="hero-intro">{profile.intro}</p>
         <div className="hero-actions">
-          <a className="btn btn-primary blueprint" href={`mailto:${profile.email}`}>
+          <a className="btn btn-primary blueprint" href={`mailto:${profile.email}`} data-goatcounter-click="email-hero">
             Email me
             <Corners />
           </a>
-          <a className="btn btn-secondary" href={profile.github} target="_blank" rel="noreferrer">
+          <a className="btn btn-secondary" href={profile.github} target="_blank" rel="noreferrer" data-goatcounter-click="github-hero">
             GitHub
           </a>
-          <a className="btn btn-secondary" href={profile.linkedin} target="_blank" rel="noreferrer">
+          <a className="btn btn-secondary" href={profile.linkedin} target="_blank" rel="noreferrer" data-goatcounter-click="linkedin-hero">
             LinkedIn
           </a>
         </div>
