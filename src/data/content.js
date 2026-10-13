@@ -144,7 +144,7 @@ export const education = [
 // The AI "digital twin" chat. The chat button only appears on the site once
 // apiUrl is set — see twin/README.md for deploying the chat backend.
 export const twin = {
-  apiUrl: '',
+  apiUrl: 'https://zeel-twin.zeel-twin-chat.workers.dev',
   greeting: "Hi! I'm Zeel's AI twin. Ask me anything about my work, projects or skills.",
   suggestedQuestions: [
     'What are you working on right now?',
