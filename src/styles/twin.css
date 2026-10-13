@@ -150,6 +150,7 @@
 }
 .twin-input {
   flex: 1;
+  min-width: 0;
   min-height: 38px;
   max-height: 120px;
   field-sizing: content;
@@ -170,4 +171,7 @@
 @media (max-width: 640px) {
   .twin-launcher.blueprint { right: 16px; bottom: 16px; }
   .twin-panel.blueprint { inset: 8px; width: auto; height: auto; }
+  /* iOS Safari zooms the whole page when a focused input's text is under
+     16px, which left the chat wider than the screen. */
+  .twin-input { font-size: 16px; }
 }
