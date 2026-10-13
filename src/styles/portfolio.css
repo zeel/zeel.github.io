@@ -34,6 +34,19 @@
   gap: 72px;
   align-items: center;
 }
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 var(--space-4);
+  padding: 4px 12px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--color-accent-800);
+  background: var(--color-accent-100);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+}
+.hero-status-dot { width: 7px; height: 7px; background: #3c8f5a; }
 .hero-kicker { color: var(--color-accent-700); margin-bottom: var(--space-3); }
 .hero h1 { font-size: 62px; margin-bottom: var(--space-4); text-wrap: balance; }
 .hero-intro {

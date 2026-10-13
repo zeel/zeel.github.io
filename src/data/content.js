@@ -7,6 +7,7 @@ export const profile = {
   navRole: 'FRONTEND', // shown after your name in the nav: ZEEL SHAH / FRONTEND
   role: 'Staff Frontend Engineer',
   location: 'Bangalore, India',
+  status: 'Open to new roles', // badge above the headline, also in search results; '' hides it
   headline: 'Building web products that are fast, scalable, and dependable.',
   intro:
     "I'm Zeel — a frontend engineer with 12+ years of experience building scalable web and mobile applications, leading engineering teams, and driving projects from conception to deployment.",
@@ -33,7 +34,7 @@ export const navLinks = [
 
 export const experience = [
   {
-    dates: 'May 2025 — Present',
+    dates: 'May 2025 — 2026',
     title: 'Staff Frontend Engineer',
     company: 'Lightup Data',
     description:
@@ -145,9 +146,10 @@ export const education = [
 // apiUrl is set — see twin/README.md for deploying the chat backend.
 export const twin = {
   apiUrl: 'https://zeel-twin.zeel-twin-chat.workers.dev',
-  greeting: "Hi! I'm Zeel's AI twin. Ask me anything about my work, projects or skills.",
+  greeting:
+    "Hi! I'm Zeel's AI twin. I'm looking for my next role, so ask me anything about my work, projects or skills.",
   suggestedQuestions: [
-    'What are you working on right now?',
+    'Are you open to new roles?',
     'How did you cut load time by 45%?',
     "What's your React Native experience?",
     'How can I get in touch?',
@@ -155,15 +157,15 @@ export const twin = {
   // Extra facts the twin can use beyond the sections above. It is told never
   // to go beyond what's written in this file, so keep these accurate.
   facts: [
-    "At Lightup Data I'm the sole frontend architect for the data-quality platform, on a two-person frontend team, owning architecture, the design system, build tooling and delivery across the whole product.",
-    'I built and maintain the Energy design system: 48 components, 9 of them authored from scratch, with shared component APIs, composition patterns and documentation.',
+    'At Lightup Data (May 2025 to 2026) I was the sole frontend architect for the data-quality platform, on a two-person frontend team, owning architecture, the design system, build tooling and delivery across the whole product.',
+    'I built and maintained the Energy design system at Lightup: 48 components, 9 of them authored from scratch, with shared component APIs, composition patterns and documentation.',
     'I led a full frontend modernization at Lightup: React 16.14 to 19, Ant Design v4 to v6, and CRA/Webpack to Vite. Route-level code splitting turned a single 7.3 MB bundle into 141 chunks and cut the initial-load payload by 45% (2,589 KB to 1,421 KB gzipped). I also migrated data fetching to RTK Query.',
     "I designed and shipped Lightup's LLM management surface (full CRUD) for configuring and operating LLM-backed data quality monitors, and led the end-to-end redesign of the monitor page.",
-    'I set frontend technical direction through design and code review, and mentor engineers on component and state management patterns.',
+    'At Lightup I set frontend technical direction through design and code review, and mentored engineers on component and state management patterns.',
     'At Toast (Oct 2024 to May 2025, part-time) I built mobile app features and shipped an iOS app in React Native through App Store review.',
     'At Tekion I was Software Engineer 2 (Nov 2020 to Mar 2022) and was promoted to Senior Software Engineer (Apr 2022 to Sept 2024) for consistently owning delivery of the CRM module.',
     'At Swiggy I was promoted from Software Engineer 1 (May 2019 to Mar 2020) to Software Engineer 2 within my first year (Apr 2020 to Oct 2020) for owning high-traffic consumer surfaces.',
     'I use AI tools daily (Claude Code, Cursor, Copilot) and have shipped LLM-backed product features, including prompt engineering.',
-    'The site invites anyone with a role or project in mind to get in touch; email is the best way to reach me.',
+    "I left Lightup Data in 2026 and I'm now looking for my next role. Email is the best way to reach me about opportunities.",
   ],
 }

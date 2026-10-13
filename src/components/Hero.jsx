@@ -6,6 +6,12 @@ export default function Hero() {
   return (
     <header id="top" className="hero">
       <div>
+        {profile.status && (
+          <p className="hero-status">
+            <span className="hero-status-dot" aria-hidden="true" />
+            {profile.status}
+          </p>
+        )}
         <h6 className="hero-kicker">
           {profile.role} · {profile.location}
         </h6>
