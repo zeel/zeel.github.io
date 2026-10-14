@@ -2,7 +2,7 @@ import { flags, profile, experience, skills } from '../data/content'
 import Nav from '../components/Nav'
 import Hero from '../components/Hero'
 import Experience from '../components/Experience'
-import Projects from '../components/Projects'
+import CaseStudies from '../components/CaseStudies'
 import Skills from '../components/Skills'
 import Education from '../components/Education'
 import Contact from '../components/Contact'
@@ -55,7 +55,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Experience />
-      {flags.showProjects && <Projects />}
+      {flags.showCaseStudies && <CaseStudies />}
       <Skills />
       <Education />
       <Contact />

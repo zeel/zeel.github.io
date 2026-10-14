@@ -1,4 +1,4 @@
-import { profile, experience, projects, skills, education, twin } from '../../src/data/content.js'
+import { profile, experience, caseStudies, skills, education, twin } from '../../src/data/content.js'
 
 // Built once from the site's content file, so the twin knows exactly what the
 // site says. Redeploy the worker after editing content.js to refresh it.
@@ -22,11 +22,11 @@ export function buildSystemPrompt() {
     'Experience (most recent first):',
     ...experience.map((job) => `- ${job.dates}: ${job.title}, ${job.company}. ${job.description}`),
     '',
-    'Selected projects:',
-    ...projects.map((p) => {
-      const links = p.links.map((l) => l.href).join(', ')
-      return `- ${p.title} (${p.kicker}; ${p.tags.join(', ')}): ${p.description}${links ? ` Links: ${links}` : ''}`
-    }),
+    'Case studies:',
+    ...caseStudies.map(
+      (c) =>
+        `- ${c.title} (${c.kicker}). Situation: ${c.situation} What I did: ${c.approach} Result: ${c.result}`,
+    ),
     '',
     `Skills: ${skills.map((s) => s.label).join(', ')}`,
     '',

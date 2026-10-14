@@ -16,8 +16,8 @@ npm run preview  # serve the exported out/ folder locally
 
 | What you want to change | Where |
 | --- | --- |
-| Any text: intro, jobs, projects, skills, education, links | [src/data/content.js](src/data/content.js) |
-| Hide the phone number / projects section | `flags` in [src/data/content.js](src/data/content.js) |
+| Any text: intro, jobs, case studies, skills, education, links | [src/data/content.js](src/data/content.js) |
+| Hide the phone number / case studies section | `flags` in [src/data/content.js](src/data/content.js) |
 | Colors, fonts, spacing tokens, shared classes (`.btn`, `.card`, `.tag`) | [src/styles/design-system.css](src/styles/design-system.css) |
 | Page layout, section styles, responsive breakpoints | [src/styles/portfolio.css](src/styles/portfolio.css) |
 | Section markup / structure | [src/components/](src/components/) |

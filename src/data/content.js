@@ -28,12 +28,13 @@ export const analytics = {
 
 // Toggles carried over from the design's props.
 export const flags = {
-  showProjects: true,
+  showCaseStudies: true,
   showPhone: true,
 }
 
 export const navLinks = [
   { label: 'Experience', href: '#experience' },
+  { label: 'Case studies', href: '#case-studies' },
   { label: 'Skills', href: '#skills' },
   { label: 'Education', href: '#education' },
   { label: 'Contact', href: '#contact' },
@@ -91,33 +92,55 @@ export const experience = [
   },
 ]
 
-export const projects = [
+// Case studies of real work (section 02). Each follows the same shape:
+// situation → what I did → result, with a few headline metrics.
+export const caseStudies = [
   {
-    kicker: 'Mobile · Auth',
-    title: 'OTP Sign-in / Sign-up',
-    description:
-      'Phone-number OTP verification for a mobile app: three Firebase Functions handle OTP generation and validation, with SMS delivery via Twilio and a UI built in Expo on Firebase Auth.',
-    tags: ['React Native', 'Firebase', 'Twilio'],
-    links: [],
-  },
-  {
-    kicker: 'Web · Full stack',
-    title: 'Discussion Forum',
-    description:
-      'A Reddit-style forum where users create topics, posts, and comments — GitHub sign-in with NextAuth, UI in Headless UI, data layer with Prisma on the Next.js framework.',
-    tags: ['Next.js', 'React', 'Prisma'],
-    links: [
-      { label: 'Live site ↗', href: 'https://udemy-next-discuss.vercel.app' },
-      { label: 'GitHub ↗', href: 'https://github.com/zeel/udemy-next-discuss' },
+    kicker: 'Lightup Data · Performance & migration',
+    title: 'From one 7.3 MB bundle to 141 chunks',
+    metrics: [
+      { value: '45%', label: 'smaller initial load' },
+      { value: '141', label: 'route-level chunks' },
+      { value: '16 → 19', label: 'React upgrade' },
     ],
+    situation:
+      'The app shipped as a single 7.3 MB JavaScript bundle on a legacy stack (React 16.14, Ant Design v4, Create React App with Webpack), so every visit downloaded the entire product up front.',
+    approach:
+      'As the sole frontend architect, I led a full modernization: React 16.14 to 19, Ant Design v4 to v6, and CRA/Webpack to Vite. I added route-level code splitting so each page loads only the code it needs, and moved data fetching to RTK Query to unify caching and request handling.',
+    result:
+      'The single bundle became 141 chunks and the initial-load payload dropped by 45%, from 2,589 KB to 1,421 KB gzipped, on an up-to-date React 19 and Vite stack.',
+    tags: ['React 19', 'Vite', 'Code splitting', 'RTK Query', 'Ant Design v6'],
   },
   {
-    kicker: 'Web · Learning',
-    title: 'Next.js Course Project',
-    description:
-      "Built as part of Stephen Grider's Udemy course — a hands-on exploration of Next.js concepts: routing, server components, caching, and deployment on Vercel.",
-    tags: ['Next.js', 'React'],
-    links: [{ label: 'Live site ↗', href: 'https://udemy-next-course-one.vercel.app' }],
+    kicker: 'Lightup Data · Design systems',
+    title: 'Energy: one design system for the whole product',
+    metrics: [
+      { value: '48', label: 'components' },
+      { value: '9', label: 'built from scratch' },
+      { value: '2', label: 'frontend engineers' },
+    ],
+    situation:
+      'A two-person frontend team owned the entire product surface, so building UI quickly and consistently depended on shared, well-documented building blocks.',
+    approach:
+      'I built and maintained the Energy design system: defined shared component APIs and composition patterns, authored 9 components from scratch, and documented how to use them.',
+    result:
+      'A 48-component system that standardized the UI across the application and gave every new screen a shared, documented starting point.',
+    tags: ['Design systems', 'React', 'Component APIs', 'Ant Design', 'Documentation'],
+  },
+  {
+    kicker: 'Tekion · Ownership & delivery',
+    title: "Owning Tekion's CRM module end to end",
+    metrics: [
+      { value: 'Senior', label: 'promoted in Apr 2022' },
+      { value: '1.5+ yrs', label: 'React Native alongside web' },
+    ],
+    situation:
+      "Tekion builds the Automotive Retail Cloud (ARC), a platform for car dealerships. I worked on its CRM module, first as Software Engineer 2 and then as Senior Software Engineer.",
+    approach:
+      'I owned the CRM module end to end: planned the work, ran the scrum, coordinated across functions, and gave product teams delivery estimates they could rely on. I built the CRM Reports module for web from scratch, contributed to the Template Builder in React, and shipped mobile features in React Native.',
+    result:
+      'Promoted from Software Engineer 2 to Senior Software Engineer in April 2022 for consistently owning delivery of the CRM module.',
+    tags: ['React', 'React Native', 'CRM', 'Reporting', 'Scrum'],
   },
 ]
 

@@ -121,17 +121,43 @@
   max-width: 64ch;
 }
 
-/* — projects — */
-.projects-grid {
+/* — case studies — */
+.cases { display: grid; gap: var(--space-8); }
+.case {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: var(--space-8);
+  padding: var(--space-8);
 }
-.project-card { padding: var(--space-6); gap: var(--space-3); }
-.project-card .card-title { font-size: 20px; }
-.project-card .card-body { font-size: 14px; line-height: 1.6; }
-.project-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
-.project-links { display: flex; gap: var(--space-4); font-size: 13px; }
+.case-title { font-size: 26px; margin: var(--space-2) 0 var(--space-6); text-wrap: balance; }
+.case-metrics { display: flex; flex-wrap: wrap; gap: var(--space-6) var(--space-8); margin: 0; }
+.case-metrics div { display: flex; flex-direction: column-reverse; }
+.case-metrics dt { font-size: 12px; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+.case-metrics dd {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 30px;
+  line-height: 1.1;
+  color: var(--color-accent-700);
+}
+.case-story { margin: 0; }
+.case-story dt {
+  margin-top: var(--space-4);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+}
+.case-story dt:first-child { margin-top: 0; }
+.case-story dd {
+  margin: var(--space-1) 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-neutral-700);
+  max-width: 62ch;
+}
+.case-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-6); }
 
 /* — skills — */
 .skills-tags {
@@ -211,11 +237,8 @@
 }
 
 /* — responsive — */
-@media (max-width: 1024px) {
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
 @media (max-width: 900px) {
+  .case { grid-template-columns: 1fr; gap: var(--space-6); }
   .hero {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -236,7 +259,9 @@
   .hero { padding-inline: var(--space-4); }
   .hero h1 { font-size: 40px; }
   .section-inner { padding: 56px var(--space-4); }
-  .projects-grid { grid-template-columns: 1fr; }
+  .case { padding: var(--space-6); }
+  .case-title { font-size: 23px; }
+  .case-metrics dd { font-size: 26px; }
   .contact-inner { padding: 64px var(--space-4) 40px; }
   .contact h2 { font-size: 34px; }
   .contact-email { font-size: 22px; }
