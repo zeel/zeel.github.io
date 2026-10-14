@@ -180,7 +180,7 @@ export const twin = {
     "Hi! I'm Zeel's AI twin. I'm looking for my next role, so ask me anything about my work, projects or skills.",
   suggestedQuestions: [
     'Are you open to new roles?',
-    'How did you cut load time by 45%?',
+    'How did you shrink the initial load by 45%?',
     "What's your React Native experience?",
     'How can I get in touch?',
   ],
